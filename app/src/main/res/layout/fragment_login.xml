@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.LoginFragment">
+
+
+    <ImageView
+        android:id="@+id/loginFragmentLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:src="@drawable/ic_loading"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/loading"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/loginFragmentLogoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/application_logo_description"
+        android:minWidth="200dp"
+        android:minHeight="100dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/loginFragmentForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginFragmentLogoImageView"
+        app:layout_constraintVertical_bias="0.177">
+
+        <EditText
+            android:id="@+id/loginFragmentUsernameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/username"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:maxWidth="1000dp"
+            android:maxHeight="500dp"
+            android:minWidth="300dp"
+            android:minHeight="50dp" />
+
+        <EditText
+            android:id="@+id/loginFragmentPasswordEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:maxWidth="1000dp"
+            android:maxHeight="500dp"
+            android:minWidth="300dp"
+            android:minHeight="50dp" />
+
+        <Button
+            android:id="@+id/loginFragmentLoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:minWidth="100dp"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/loginFragmentRegisterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:minWidth="100dp"
+            android:text="@string/register" />
+
+        <Button
+            android:id="@+id/loginFragmentGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/google_log_in" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

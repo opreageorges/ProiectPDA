@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/registerFragmentLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/fragment_register_scene"
+    tools:context=".views.RegisterFragment">
+
+    <LinearLayout
+        android:id="@+id/registerFragmentLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/registerFragmentUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/username"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minWidth="300dp"
+            android:minHeight="50dp" />
+
+        <EditText
+            android:id="@+id/registerFragmentEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:minWidth="300dp"
+            android:minHeight="50dp" />
+
+        <EditText
+            android:id="@+id/registerFragmentPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:minWidth="300dp"
+            android:minHeight="50dp" />
+
+        <Button
+            android:id="@+id/registerFragmentRegisterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:minWidth="100dp"
+            android:text="@string/register" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/registerFragmentBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="back"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <ImageView
+        android:id="@+id/registerFragmentLoading"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:rotation="0"
+        android:src="@drawable/ic_loading"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/loading" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

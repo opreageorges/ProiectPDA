@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.295" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/drawable/ic_baseline_search_24dp.xml" value="0.3675" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/drawable/ic_loading.xml" value="0.249" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.3675" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/drawable/loading_spinner.xml" value="0.3315" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/layout/activity_main.xml" value="0.2574074074074074" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/layout/content_main.xml" value="0.25" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/layout/fragment_first.xml" value="0.2574074074074074" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/layout/fragment_friend_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/layout/fragment_friend_request.xml" value="0.36666666666666664" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/layout/fragment_register.xml" value="0.27058823529411763" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/layout/friend_list_adapter_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/layout/friend_request_adapter_layot.xml" value="0.36666666666666664" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/layout/layout_loading.xml" value="0.365625" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/layout/navigation_drawer.xml" value="0.365625" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/layout/sample_friend_request_adapter.xml" value="0.36666666666666664" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/menu/bottom_menu.xml" value="0.33" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/menu/drawer_menu.xml" value="0.33" />
+        <entry key="..\:/Facultate/AN IV/SEM II/PDA/Messenger/app/src/main/res/menu/menu_main.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Embedded JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.04954954954954955" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

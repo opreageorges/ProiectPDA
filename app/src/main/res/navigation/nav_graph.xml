@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/friendListFragment"
+        android:name="com.ogeorges.messenger.views.FriendListFragment"
+        android:label="fragment_friend_list"
+        tools:layout="@layout/fragment_friend_list">
+        <action
+            android:id="@+id/action_friendListFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/nav_graph"/>
+        <action
+            android:id="@+id/action_friendListFragment_to_friendRequestFragment"
+            app:destination="@id/friendRequestFragment" />
+        <action
+            android:id="@+id/action_friendListFragment_to_messageRoomFragment"
+            app:destination="@id/messageRoomFragment" >
+            <argument
+                app:argType="string"
+                android:name="friendUsername"
+                />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ogeorges.messenger.views.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_friendListFragment"
+            app:destination="@id/friendListFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/nav_graph"/>
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.ogeorges.messenger.views.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendRequestFragment"
+        android:name="com.ogeorges.messenger.views.FriendRequestFragment"
+        android:label="fragment_friend_request"
+        tools:layout="@layout/fragment_friend_request" >
+        <action
+            android:id="@+id/action_friendRequestFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/nav_graph"
+            />
+        <action
+            android:id="@+id/action_friendRequestFragment_to_friendListFragment"
+            app:destination="@id/friendListFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/messageRoomFragment"
+        android:name="com.ogeorges.messenger.views.MessageRoomFragment"
+        android:label="fragment_message_room"
+        tools:layout="@layout/fragment_message_room" >
+
+        <action
+            android:id="@+id/action_messageRoomFragment_to_friendListFragment"
+            app:destination="@id/friendListFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "905003208611",
+    "project_id": "proiectpda",
+    "storage_bucket": "proiectpda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905003208611:android:3657c5bff9488420135416",
+        "android_client_info": {
+          "package_name": "com.ogeorges.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905003208611-csbrvnnlmht8hfl2qc58p8cqmcpijg4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn_zQ_9TIU0cmsPW8NowfuFFy5_YQHEAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905003208611-csbrvnnlmht8hfl2qc58p8cqmcpijg4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

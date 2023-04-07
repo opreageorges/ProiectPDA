@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/registerFragmentLoading"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:rotation="0"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:translationY="20000dp" />
+    </ConstraintSet>
+
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/middle"
+        motion:duration="1">
+        <KeyFrameSet>
+            <KeyAttribute
+                motion:motionTarget="@+id/registerFragmentLoading"
+                motion:framePosition="0"
+                android:translationY="20000dp" />
+            <KeyAttribute
+                motion:motionTarget="@+id/registerFragmentLoading"
+                motion:framePosition="4"
+                android:translationY="0dp" />
+        </KeyFrameSet>
+
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/middle" >
+        <Constraint
+            android:id="@+id/registerFragmentLoading"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:rotation="0"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:translationY="0dp" />
+    </ConstraintSet>
+
+    <Transition
+        android:id="@+id/registerFragmentTransition"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/middle"
+        motion:duration="2284">
+        <KeyFrameSet>
+            <KeyAttribute
+                motion:motionTarget="@+id/registerFragmentLoading"
+                motion:framePosition="0"
+                android:translationY="0dp"
+                android:rotation="0" />
+            <KeyAttribute
+                motion:motionTarget="@+id/registerFragmentLoading"
+                motion:framePosition="100"
+                android:translationY="0dp"
+                android:rotation="360" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/registerFragmentLoading"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:rotation="-360"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:translationX="0dp"
+            android:rotationY="0"
+            android:rotationX="0" />
+    </ConstraintSet>
+
+
+
+
+</MotionScene>
